@@ -38,7 +38,7 @@ $font: 'Space Mono', monospace;
         display: flex;
         flex-direction: column;
         text-transform: uppercase;
-        font-size: 22px;
+        font-size: 24px;
         letter-spacing: 8px;
         color: $very_dark_cyan;
         margin-bottom: 50px;
@@ -54,6 +54,59 @@ $font: 'Space Mono', monospace;
 
         &-functions {
             width: 50%;
+            padding: 0 48px 0 0;
+            color: $dark_grayish_cyan;
+
+            .value-input {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 16px;
+                    font-weight: 700;
+                } // label
+
+                input {
+                    height: 48px;
+                } // input
+            } // .value-input
+
+            .tip-selection {
+                margin: 40px 0;
+
+                h2 {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                } // h2
+
+                .tip-options {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 14px;
+                    
+                    input[type=radio] {
+                        display: none;
+                    } // input[type=radio]
+
+                    label {
+                        height: 48px;
+                        background-color: $very_dark_cyan;
+                        flex: 1 1 25%;
+                        line-height: 48px;
+                        text-align: center;
+                        font-size: 24px;
+                        color: $white;
+                        font-weight: 700;
+                        border-radius: 5px;
+                    } // label
+
+                    input[type=number] {
+                        width: 25%;
+                        flex: 1 1 25%;
+                        height: 48px;
+                    } // .input[type=number]
+                } // .tip-options
+            } // .tip-selection
         } // .calculator-functions
 
         &-results {

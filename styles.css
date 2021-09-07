@@ -34,7 +34,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 8px;
   color: #00494d;
   margin-bottom: 50px;
@@ -56,6 +56,71 @@
 
 .main-container .calculator-functions {
   width: 50%;
+  padding: 0 48px 0 0;
+  color: #7f9c9f;
+}
+
+.main-container .calculator-functions .value-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .calculator-functions .value-input label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main-container .calculator-functions .value-input input {
+  height: 48px;
+}
+
+.main-container .calculator-functions .tip-selection {
+  margin: 40px 0;
+}
+
+.main-container .calculator-functions .tip-selection h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.main-container .calculator-functions .tip-selection .tip-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 14px;
+}
+
+.main-container .calculator-functions .tip-selection .tip-options input[type=radio] {
+  display: none;
+}
+
+.main-container .calculator-functions .tip-selection .tip-options label {
+  height: 48px;
+  background-color: #00494d;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  line-height: 48px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.main-container .calculator-functions .tip-selection .tip-options input[type=number] {
+  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  height: 48px;
 }
 
 .main-container .calculator-results {
